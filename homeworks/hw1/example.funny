@@ -1,6 +1,7 @@
 // Linear search in an array, annotated with a contract.
-function find(a: int[], x: int) returns r: int
+function find(a: int[], x: int)
   requires length(a) > 0
+  returns r: int
   ensures r >= 0 -> a[r] == x
 {
   i = 0;
