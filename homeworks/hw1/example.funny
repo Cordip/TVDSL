@@ -1,0 +1,15 @@
+// Linear search in an array, annotated with a contract.
+function find(a: int[], x: int) returns r: int
+  requires length(a) > 0
+  ensures r >= 0 -> a[r] == x
+{
+  i = 0;
+  r = 0 - 1;
+  while (i < length(a))
+    invariant 0 <= i and i <= length(a)
+  {
+    if (a[i] == x) { r = i; } else { r = r; }
+    i = i + 1;
+  }
+  assert r != 0 - 2;
+}
