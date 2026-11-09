@@ -1,0 +1,22 @@
+// Every statement kind, contracts, locals, the function keyword.
+function sum(a: int[]) requires length(a) >= 0 returns s: int, n: int[]
+  ensures s >= 0
+  uses i: int, t, b: int[]
+{
+  i = 0;
+  s = 0;
+  while (i < length(a))
+    invariant 0 <= i and i <= length(a)
+  {
+    s = s + a[i];
+    i = i + 1;
+  }
+  {}
+  if (s < 0) { assume false; }
+  assert s == s;
+  n = a;
+}
+
+empty_params() returns r: int r = 0;
+
+with_underscore_1(x_y: int) returns r_2: int { r_2 = x_y; }

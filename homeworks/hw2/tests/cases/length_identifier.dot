@@ -1,0 +1,29 @@
+digraph AST {
+  n0 [kind="Module", line=1, col=1, label="Module @1:1"];
+  n0 -> n1 [label="items[0]"];
+  n0 -> n2 [label="items[1]"];
+  n1 [kind="Function", line=1, col=1, label="Function @1:1", name="length"];
+  n1 -> n3 [label="params[0]"];
+  n1 -> n4 [label="returns[0]"];
+  n1 -> n5 [label="body"];
+  n2 [kind="Function", line=2, col=1, label="Function @2:1", name="f"];
+  n2 -> n6 [label="params[0]"];
+  n2 -> n7 [label="returns[0]"];
+  n2 -> n8 [label="body"];
+  n3 [kind="Param", line=1, col=8, label="Param @1:8", name="length", type="int"];
+  n4 [kind="Param", line=1, col=29, label="Param @1:29", name="r", type="int"];
+  n5 [kind="Block", line=1, col=36, label="Block @1:36"];
+  n5 -> n9 [label="statements[0]"];
+  n6 [kind="Param", line=2, col=3, label="Param @2:3", name="length", type="int[]"];
+  n7 [kind="Param", line=2, col=26, label="Param @2:26", name="r", type="int"];
+  n8 [kind="Block", line=2, col=33, label="Block @2:33"];
+  n8 -> n10 [label="statements[0]"];
+  n9 [kind="Assign", line=1, col=38, label="Assign @1:38", name="r"];
+  n9 -> n11 [label="value"];
+  n10 [kind="Assign", line=2, col=35, label="Assign @2:35", name="r"];
+  n10 -> n12 [label="value"];
+  n11 [kind="Var", line=1, col=42, label="Var @1:42", name="length"];
+  n12 [kind="Call", line=2, col=39, label="Call @2:39", name="length"];
+  n12 -> n13 [label="args[0]"];
+  n13 [kind="Var", line=2, col=46, label="Var @2:46", name="length"];
+}

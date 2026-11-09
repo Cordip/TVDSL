@@ -1,0 +1,10 @@
+divmod(a: int, b: int) returns q: int, m: int {
+  q = a / b;
+  m = a - q * b;
+}
+
+main() returns r: int {
+  x, y = divmod(7, 2);
+  x, y, z = three();
+  r = x + y;
+}

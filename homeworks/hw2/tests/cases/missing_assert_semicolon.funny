@@ -1,0 +1,4 @@
+f() returns r: int {
+  assert true
+  r = 1;
+}

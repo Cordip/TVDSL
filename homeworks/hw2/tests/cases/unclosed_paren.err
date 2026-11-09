@@ -1,0 +1,3 @@
+tests/cases/unclosed_paren.funny:2:13: error: expected ')', found ';'
+tests/cases/unclosed_paren.funny:3:13: error: expected ')', found '{'
+tests/cases/unclosed_paren.funny:4:13: error: expected ')', found ';'

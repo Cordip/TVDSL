@@ -1,0 +1,2 @@
+tests/cases/deep_nesting.funny:3:1005: error: nesting deeper than 1000 levels
+tests/cases/deep_nesting.funny:4:7: error: expected expression, found ';'

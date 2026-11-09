@@ -1,0 +1,1 @@
+tests/cases/lexical_utf8.funny:2:16: error: unexpected byte 0xE2

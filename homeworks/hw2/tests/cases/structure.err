@@ -1,0 +1,8 @@
+tests/cases/structure.funny:1:20: error: expected 'returns', found '=>'
+tests/cases/structure.funny:2:26: error: expected statement, found 'requires'
+tests/cases/structure.funny:3:5: error: expected ':', found 'int'
+tests/cases/structure.funny:4:26: error: expected 'returns', found '{'
+tests/cases/structure.funny:5:27: error: expected ']', found '{'
+tests/cases/structure.funny:6:29: error: expected function call, found number '5'
+tests/cases/structure.funny:6:35: error: expected identifier, found '='
+tests/cases/structure.funny:7:31: error: expected function or formula, found number '42'

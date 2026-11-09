@@ -1,0 +1,29 @@
+digraph AST {
+  n0 [kind="Module", line=2, col=1, label="Module @2:1"];
+  n0 -> n1 [label="items[0]"];
+  n0 -> n2 [label="items[1]"];
+  n1 [kind="Formula", line=2, col=1, label="Formula @2:1", name="positive"];
+  n1 -> n3 [label="params[0]"];
+  n1 -> n4 [label="body"];
+  n2 [kind="Formula", line=3, col=1, label="Formula @3:1", name="nonneg"];
+  n2 -> n5 [label="params[0]"];
+  n2 -> n6 [label="body"];
+  n3 [kind="Param", line=2, col=10, label="Param @2:10", name="x", type="int"];
+  n4 [kind="Compare", line=2, col=21, label="Compare @2:21", op=">"];
+  n4 -> n7 [label="left"];
+  n4 -> n8 [label="right"];
+  n5 [kind="Param", line=3, col=8, label="Param @3:8", name="x", type="int"];
+  n6 [kind="Logical", line=3, col=19, label="Logical @3:19", op="or"];
+  n6 -> n9 [label="left"];
+  n6 -> n10 [label="right"];
+  n7 [kind="Var", line=2, col=21, label="Var @2:21", name="x"];
+  n8 [kind="Int", line=2, col=25, label="Int @2:25", value="0"];
+  n9 [kind="Compare", line=3, col=19, label="Compare @3:19", op=">="];
+  n9 -> n11 [label="left"];
+  n9 -> n12 [label="right"];
+  n10 [kind="Call", line=3, col=29, label="Call @3:29", name="positive"];
+  n10 -> n13 [label="args[0]"];
+  n11 [kind="Var", line=3, col=19, label="Var @3:19", name="x"];
+  n12 [kind="Int", line=3, col=24, label="Int @3:24", value="0"];
+  n13 [kind="Var", line=3, col=38, label="Var @3:38", name="x"];
+}

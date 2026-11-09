@@ -1,0 +1,2 @@
+tests/cases/else_recovery_block.funny:2:11: error: expected condition, found ')'
+tests/cases/else_recovery_block.funny:3:7: error: expected expression, found ';'

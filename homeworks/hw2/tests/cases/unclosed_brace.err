@@ -1,0 +1,3 @@
+tests/cases/unclosed_brace.funny:5:1: error: expected '}' to close '{' at 2:17, found identifier 'g'
+tests/cases/unclosed_brace.funny:5:1: error: expected '}' to close '{' at 1:26, found identifier 'g'
+tests/cases/unclosed_brace.funny:10:1: error: expected '}' to close '{' at 9:20, found end of file

@@ -1,0 +1,11 @@
+// Arithmetic: * and / bind tighter than + and -, all left-associative;
+// unary minus binds tightest.
+calc(a: int, b: int, c: int) returns r: int {
+  r = a - b - c;
+  r = a / b / c;
+  r = a + b * c;
+  r = (a + b) * c;
+  r = -a * b;
+  r = - -a;
+  r = a - -b;
+}

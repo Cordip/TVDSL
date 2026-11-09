@@ -1,0 +1,1 @@
+tests/cases/else_recovery_expression.funny:2:18: error: expected expression, found ';'

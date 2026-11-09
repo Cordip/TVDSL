@@ -1,0 +1,5 @@
+tests/cases/extra_tokens.funny:2:8: error: expected ';' after expression
+tests/cases/extra_tokens.funny:3:13: error: expected statement, found ';'
+tests/cases/extra_tokens.funny:4:12: error: expected ';' after expression
+tests/cases/extra_tokens.funny:6:1: error: expected function or formula, found '}'
+tests/cases/extra_tokens.funny:7:27: error: expected identifier, found '{'

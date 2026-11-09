@@ -1,0 +1,2 @@
+tests/cases/chained_compare.funny:2:13: error: comparison operators cannot be chained
+tests/cases/chained_compare.funny:3:17: error: comparison operators cannot be chained

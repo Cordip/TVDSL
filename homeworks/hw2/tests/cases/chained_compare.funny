@@ -1,0 +1,5 @@
+f(a: int, b: int, c: int) returns r: int {
+  if (a < b < c) r = 1;
+  assert a == b == c;
+  if (a < b and b < c) r = 2;
+}

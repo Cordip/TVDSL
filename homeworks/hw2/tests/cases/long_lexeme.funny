@@ -1,0 +1,2 @@
+f(x: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) returns r: int { r = 0; }
+g(x: 1111111111111111111111111111111111111111111111111111111111111111) returns r: int { r = 0; }

@@ -1,0 +1,4 @@
+tests/cases/logical_in_expression.funny:2:7: error: expected expression, found condition
+tests/cases/logical_in_expression.funny:3:9: error: expected expression, found condition
+tests/cases/logical_in_expression.funny:4:9: error: expected expression, found condition
+tests/cases/logical_in_expression.funny:5:9: error: expected expression, found condition

@@ -1,0 +1,3 @@
+// A formula may end with ';'.
+positive(x: int) => x > 0;
+nonneg(x: int) => x >= 0 or positive(x);

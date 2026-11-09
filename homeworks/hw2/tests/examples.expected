@@ -1,0 +1,45 @@
+# Course examples (TVDSL/project/examples) and what hw2 does with each:
+# parses, syntax (syntax error) or lexical (lexical error). A bad_* example
+# with a semantic error parses; types and names are checked in later homeworks.
+step01/bad_missing_semicolon.funny       syntax   # no ';' after r = 1 + 2
+step01/bad_unknown_identifier.funny      parses   # undeclared x: semantic
+step01/good_basic.funny                  parses
+step01/good_parentheses.funny            parses
+step01/good_precedence.funny             parses
+step01/good_unary.funny                  parses
+step02/bad_arg_count.funny               parses   # argument count: semantic
+step02/bad_unknown_function.funny        parses   # undefined foo: semantic
+step02/good_calls_single.funny           parses
+step02/good_nested_calls.funny           parses
+step03/bad_multi_in_expr.funny           parses   # tuple result in expression: semantic
+step03/bad_tuple_mismatch.funny          parses   # tuple arity: semantic
+step03/good_chain_multi.funny            parses
+step03/good_multi_return.funny           parses
+step04/bad_int_condition.funny           syntax   # if (r): expected condition, found expression
+step04/bad_missing_paren.funny           syntax   # if (r > 0 {
+step04/good_if_basic.funny               parses
+step04/good_nested_if.funny              parses
+step05/bad_modify_param.funny            parses   # assignment to a parameter: semantic
+step05/good_while_basic.funny            parses
+step05/good_while_nested.funny           parses
+step06/bad_modify_param_array.funny      parses   # a[0] = 1 on a parameter: semantic
+step06/good_array_head.funny             parses
+step06/good_arrays_read_copy.funny       parses
+step07/bad_index_not_int.funny           parses   # b[a] with a: int[]: semantic
+step07/good_array_update_nested.funny    parses
+step07/good_array_update_sugar.funny     parses
+step08/bad_length_on_int.funny           parses   # length(x) with x: int: semantic
+step08/good_length_bounds.funny          parses
+step08/good_length_sum.funny             parses
+step09/bad_ensures_unknown.funny         parses   # undeclared z: semantic
+step09/good_requires_ensures.funny       parses
+step10/bad_invariant_undeclared.funny    parses   # undeclared name: semantic
+step10/good_invariant_sum.funny          parses
+step11/bad_assert_nonpredicate.funny     syntax   # assert r: expected predicate, found expression
+step11/good_assert_assume.funny          parses
+step12/bad_formula_arity.funny           parses   # formula argument count: semantic
+step12/good_formulas_sorted.funny        lexical  # uses U+2192, see grammar.md
+step13/bad_arg_mismatch_recursion.funny  parses   # argument count: semantic
+step13/good_recursion_fact.funny         parses
+step14/bad_minmax_tuple_use.funny        parses   # tuple result to one variable: semantic
+step14/good_minmax_normalize.funny       parses

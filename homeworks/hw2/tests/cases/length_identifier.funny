@@ -1,0 +1,2 @@
+length(length: int) returns r: int { r = length; }
+f(length: int[]) returns r: int { r = length(length); }

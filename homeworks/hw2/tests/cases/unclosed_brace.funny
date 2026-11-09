@@ -1,0 +1,9 @@
+f(x: int) returns r: int {
+  while (x > 0) {
+    r = 1;
+
+g(x: int) returns r: int {
+  r = x;
+}
+
+h() returns r: int { r = 1;

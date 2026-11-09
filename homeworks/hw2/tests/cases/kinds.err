@@ -1,0 +1,16 @@
+tests/cases/kinds.funny:3:7: error: expected condition, found expression
+tests/cases/kinds.funny:4:10: error: expected condition, found expression
+tests/cases/kinds.funny:5:7: error: expected expression, found condition
+tests/cases/kinds.funny:6:9: error: expected expression, found condition
+tests/cases/kinds.funny:7:9: error: expected expression, found condition
+tests/cases/kinds.funny:8:7: error: expected expression, found condition
+tests/cases/kinds.funny:9:8: error: expected expression, found condition
+tests/cases/kinds.funny:10:10: error: expected predicate, found expression
+tests/cases/kinds.funny:11:10: error: expected predicate, found expression
+tests/cases/kinds.funny:12:7: error: expected condition, found expression
+tests/cases/kinds.funny:13:7: error: quantifier outside a predicate
+tests/cases/kinds.funny:14:12: error: expected expression, found condition
+tests/cases/kinds.funny:16:20: error: expected predicate, found expression
+tests/cases/kinds.funny:17:34: error: expected predicate, found expression
+tests/cases/kinds.funny:18:14: error: expected predicate, found expression
+tests/cases/kinds.funny:19:31: error: expected predicate, found expression

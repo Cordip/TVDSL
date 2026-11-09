@@ -1,0 +1,9 @@
+// A user function named set stays a Call; the sugar becomes ArrayUpdate.
+set(a: int[], i: int, v: int) returns b: int[] {
+  b = a;
+  b[i] = v;
+}
+
+main(a: int[]) returns b: int[] {
+  b = set(a, 0, 1);
+}

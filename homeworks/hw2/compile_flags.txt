@@ -1,0 +1,8 @@
+-std=c11
+-Iinclude
+-Isrc
+-I../hw1/include
+-I../hw1/src
+-Wall
+-Wextra
+-Wpedantic

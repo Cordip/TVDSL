@@ -1,0 +1,21 @@
+digraph AST {
+  n0 [kind="Module", line=1, col=1, label="Module @1:1"];
+  n0 -> n1 [label="items[0]"];
+  n1 [kind="Function", line=1, col=1, label="Function @1:1", name="main"];
+  n1 -> n2 [label="returns[0]"];
+  n1 -> n3 [label="body"];
+  n2 [kind="Param", line=1, col=16, label="Param @1:16", name="r", type="int"];
+  n3 [kind="Block", line=1, col=23, label="Block @1:23"];
+  n3 -> n4 [label="statements[0]"];
+  n4 [kind="Assign", line=2, col=3, label="Assign @2:3", name="r"];
+  n4 -> n5 [label="value"];
+  n5 [kind="Binary", line=2, col=7, label="Binary @2:7", op="+"];
+  n5 -> n6 [label="left"];
+  n5 -> n7 [label="right"];
+  n6 [kind="Int", line=2, col=7, label="Int @2:7", value="1"];
+  n7 [kind="Binary", line=2, col=11, label="Binary @2:11", op="*"];
+  n7 -> n8 [label="left"];
+  n7 -> n9 [label="right"];
+  n8 [kind="Int", line=2, col=11, label="Int @2:11", value="2"];
+  n9 [kind="Int", line=2, col=15, label="Int @2:15", value="3"];
+}

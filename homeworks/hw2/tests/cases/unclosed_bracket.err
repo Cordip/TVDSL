@@ -1,0 +1,2 @@
+tests/cases/unclosed_bracket.funny:2:10: error: expected ']', found ';'
+tests/cases/unclosed_bracket.funny:3:7: error: expected ']', found '='

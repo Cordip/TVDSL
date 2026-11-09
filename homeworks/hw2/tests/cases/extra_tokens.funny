@@ -1,0 +1,7 @@
+f(x: int) returns r: int {
+  r = x 1;
+  r = x + 1;;
+  r = x + 1 ) ;
+}
+}
+g(x: int) returns r: int, { r = x; }

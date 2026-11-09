@@ -1,0 +1,5 @@
+// else binds to the nearest if.
+f(x: int, y: int) returns r: int {
+  if (x > 0) if (y > 0) r = 1; else r = 2;
+  if (x > 0) { if (y > 0) r = 3; } else r = 4;
+}

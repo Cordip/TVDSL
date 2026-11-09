@@ -1,0 +1,2 @@
+tests/cases/long_lexeme.funny:1:6: error: expected 'int', found identifier 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...'
+tests/cases/long_lexeme.funny:2:6: error: expected 'int', found number '11111111111111111111111111111111...'

@@ -1,0 +1,2 @@
+tests/cases/missing_body.funny:2:1: error: expected statement, found identifier 'g'
+tests/cases/missing_body.funny:2:32: error: expected expression, found ';'

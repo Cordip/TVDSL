@@ -1,0 +1,10 @@
+function swap(a: int[], i: int, j: int)
+  requires 0 <= i and i < length(a) and 0 <= j and j < length(a)
+  returns r: int[]
+  uses saved: int
+{
+  r = a;
+  saved = r[i];
+  r[i] = r[j];
+  r[j] = saved;
+}

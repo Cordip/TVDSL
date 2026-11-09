@@ -1,0 +1,15 @@
+// Formulas, formula references, quantifiers, -> in predicates.
+is_sorted(a: int[], l: int, r: int) =>
+  forall (k: int | (l <= k and k + 1 <= r) -> a[k] <= a[k + 1]);
+
+positive(x: int) => x > 0;
+
+has(a: int[], x: int) =>
+  exists (i: int | 0 <= i and i < length(a) and a[i] == x);
+
+check(a: int[]) requires length(a) > 1 and is_sorted(a, 0, length(a) - 1)
+  returns ok: int ensures positive(ok) or not has(a, ok) {
+  ok = 1;
+  assert forall (i: int | exists (j: int | i < j)) and true;
+  assume positive(f(ok) + 1);
+}

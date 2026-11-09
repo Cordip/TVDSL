@@ -1,0 +1,2 @@
+tests/cases/condition_assignment.funny:2:9: error: expected ')' or comparison, found '='
+tests/cases/condition_assignment.funny:3:12: error: expected ')' or comparison, found '='

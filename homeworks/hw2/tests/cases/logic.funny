@@ -1,0 +1,9 @@
+// Conditions: not > and > or > ->, and -> is right-associative.
+// Comparisons bind tighter than not.
+logic(a: int, b: int) returns r: int {
+  if (not a < b and b < a or a == b) r = 1; else r = 0;
+  if (a < b -> b > a -> true) r = 2;
+  if ((a < b -> b > a) -> false) r = 3;
+  if (not not (a != b) or false) r = 4;
+  while (a <= b and (b >= a or a > 0)) r = 5;
+}

@@ -1,0 +1,6 @@
+f(x: int) returns r: int {
+  r = not x;
+  r = x and x;
+  r = x or x;
+  r = x -> x;
+}

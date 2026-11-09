@@ -1,0 +1,5 @@
+// A formula may end without ';': the next item or the end of file follows.
+positive(x: int) => x > 0
+nonneg(x: int) => x >= y
+function f(x: int) returns r: int { assert nonneg(x); r = x; }
+last(x: int) => positive(x)

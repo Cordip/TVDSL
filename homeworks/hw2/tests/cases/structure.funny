@@ -1,0 +1,7 @@
+function f(x: int) => x > 0;
+g(x: int) returns r: int requires x > 0 { r = x; }
+h(x int) returns r: int { r = x; }
+k(x: int) requires x > 0 { r = x; }
+m(x: int) returns r: int[ { r = x; }
+n() returns r: int { a, b = 5; c, = f(); }
+q() returns r: int { r = 1; } 42

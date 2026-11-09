@@ -1,0 +1,7 @@
+// a[i] = v and a[i][j] = v desugar into nested set(...).
+upd(a: int[], i: int, j: int, v: int) returns b: int[] {
+  b = a;
+  b[0] = 42;
+  b[i][j] = v;
+  b[i][j + 1][0] = b[i][j] + 1;
+}

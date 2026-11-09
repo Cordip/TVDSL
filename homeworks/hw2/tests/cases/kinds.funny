@@ -1,0 +1,19 @@
+// Condition where an expression is needed and vice versa.
+f(x: int, a: int[]) returns r: int {
+  if (x + 1) r = 1;
+  while (x) r = 2;
+  r = x > 0;
+  r = a[x == 1];
+  r = g(x < 1);
+  r = not x;
+  r = -(x < 1);
+  assert x and true;
+  assume (x);
+  if (f(x)) r = 3;
+  if (forall (k: int | k > 0)) r = 4;
+  x, y = g(true);
+}
+g(x: int) requires x returns r: int { r = x; }
+h(x: int) returns r: int ensures r + 1 { r = x; }
+p(x: int) => x + 1;
+q(x: int) => forall (k: int | k);
